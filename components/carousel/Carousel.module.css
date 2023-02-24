@@ -1,0 +1,11 @@
+.images{
+    border: 0.3rem solid var(--secondary-color);
+}
+
+.arrows {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 10vh;
+    gap: 40rem;
+}

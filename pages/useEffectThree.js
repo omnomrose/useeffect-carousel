@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { useState, useEffect } from "react";
+import clickable from '@/styles/useEffectThree.module.css'
 
 export default function useEffectThree() {
 
@@ -14,17 +15,26 @@ export default function useEffectThree() {
 
     return (
         <>
-            <Link href="/">Home</Link>
-            <div>
-                <button onClick={() => setNumber(number + 1)}>
-                    Click Me
-                </button>
-            </div>
-            <div>
-                useEffectThree
-            </div>
-            <div>
-                {value}
+
+            <div className={clickable.body}>
+                <div className={clickable.header}>
+                    <Link className={clickable.link} href="/">Home
+                    </Link>
+                </div>
+                <div className={clickable.main}>
+
+                    <button className={clickable.button} onClick={() => setNumber(number + 1)}>
+                        Click Me
+                    </button>
+
+                    <div className={clickable.title}>
+                        useEffectThree
+                    </div>
+                    <div className={clickable.number}>
+                        {value}
+                    </div>
+
+                </div>
             </div>
         </>
     )

@@ -1,1 +1,32 @@
-/* use flex or grid on stylizing the pages */
+.body {
+  background-color: var(--primary-color);
+  margin: -10px;
+  min-height: 100vh;
+}
+
+.header{
+  display: flex;
+  margin-left: 10vh;
+  padding-top: 10vh;
+}
+
+.images{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.link {
+  color: var(--font-color);
+  font-family: var(--font);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.link:hover {
+    transition: 350ms ease-in-out;
+    transform: scale(1.05);
+    color: var(--secondary-color);
+}
+
